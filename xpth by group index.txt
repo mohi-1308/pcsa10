@@ -1,0 +1,67 @@
+   Assignment:- 10/11/2022
+xpath by attrinute:-
+//img[@alt='Grocery']
+//img[@alt='Mobiles']
+img[@alt='Appliances']
+//img[@alt='Beauty, Toys & More']
+//img[@alt='Travel']
+//img[@alt='2-Wheelers']
+
+
+xpath by text:-
+//div[text()='Grocery']
+//div[text()='Mobiles']
+//div[text()='Appliances']
+//div[text()='Travel']
+//div[text()='Beauty, Toys & More']
+//div[text()='2-Wheelers']
+
+
+
+Assignment:-12/11/2022
+using independent and dependent xpath:-
+1) for Airticketing:-
+ for name:-
+//td[text()='Air Ticketing']
+2)for name and mobile no.:-
+//td[text()='Air Ticketing']/..//td[@data-title='helpline']  :- getting 1of1
+
+3) for tourism:-
+for name & mobile no:-
+//td[text()='Tourism']/..//td[@data-title="helpline"]  :- getting 1of1
+
+4)for samsung
+(//div[text()="SAMSUNG Galaxy F23 5G (Aqua Blue, 128 GB)"])[1]/../../..//div[@class="_30jeq3 _1_WHN1"]   :- getting 1of1
+   
+
+        Assignment:- 13/11/2022
+using xpath by  group index 
+(xpath)[ ]:-index value
+syntax:-[FE]/../..[DE]
+
+1) for samsung F23 5G:-
+(//div[text()='SAMSUNG Galaxy F23 5G (Copper Blush, 128 GB)'])[2]/../..//div[@class="_30jeq3 _1_WHN1"]   :-getting 1of1
+
+2)for realme9:- storage,name,price
+(//li[text()='6 GB RAM | 128 GB ROM | Expandable Upto 256 GB'])[1]/../../..//div[text()='realme 9 (Stargaze White, 128 GB)']/../..//div[@class="_30jeq3 _1_WHN1"]    :-got 1of1
+
+3)for realme9:- add to compare, name, price.
+steps:- covering targeted element
+//span[text()='Add to Compare']
+(//span[text()='Add to Compare'])[1]
+(//span[text()='Add to Compare'])[1]/../../../../..  
+(//span[text()='Add to Compare'])[1]/../../../../..//div[text()='realme 9 (Stargaze White, 128 GB)']/../..
+(//span[text()='Add to Compare'])[1]/../../../../..//div[text()='realme 9 (Stargaze White, 128 GB)']/../..//div[@class="_30jeq3 _1_WHN1"]    :-getting 1of1
+
+15/11/2022
+xpath by axis:-
+//td[text()='Buddhist train']/parent::tr//td[@data-title="helpline"]   :-getting 1of1
+
+
+
+
+
+18/11/2022
+fixed & dynamic element
+//label[text()='Female']/..//input[@type="radio"]
+//label[text()='Female']/parent::span//input[@type='radio']
